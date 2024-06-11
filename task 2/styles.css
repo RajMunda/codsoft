@@ -1,0 +1,368 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+.container{
+    background: #262525;
+    display: flex;
+    height: 100vh;
+    background: rgb(38,37,37);
+background: linear-gradient(90deg, rgba(38,37,37,1) 70%, rgba(56,119,255,1) 100%);
+}
+
+
+
+
+.navlist{
+    display: flex;
+    gap: 3.5rem;
+    position: fixed;
+    height: 10vh;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    backdrop-filter: blur(10px);
+
+
+}
+
+.navlist li{
+    list-style: none;
+    justify-content: center;
+    align-items: center;
+    margin: 0 15px;
+    
+    }
+    
+    .navlist li a{
+    font-weight: 500;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-decoration: none;
+    text-transform: none;
+    color: #9b1b1b;
+    font-size: 1rem;
+    position: relative;
+
+}
+
+.left-container, .right-container{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+
+}
+
+.left-container{
+    /* background: #262525; */
+    width: 70%;
+    display: flex;
+    /* float: left; */
+    height: 100vh;
+    position: sticky;
+    
+
+}
+.right-container{
+    /* background: linear-gradient(-90deg, #3877ff, #262525 70%); */
+    width: 30%;
+    /* float: right; */
+    height: 100vh;
+
+
+}
+ .icons .fa-brands{
+    color: #bbb;
+    font-size: 1.7rem;
+    margin: 1.5rem;
+    
+ }
+
+ .fa-brands:hover{
+    color:rgb(93, 196, 236);
+    transform: scale(1.1);
+ }
+ .icons{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: .5rem;
+    margin: 1px;
+ }
+.content{
+    margin-left: 2rem;
+
+}
+.content .intro{
+
+    font-size: 1.5rem;
+    color: #fff;
+
+}
+
+.content .intro span{
+    color: yellow;
+}
+.content h1{
+    font-size: 4rem;
+    color: #5db9ee;
+}
+
+.content .detail{
+    font-size: 1.2rem;
+    color: #fff;
+    max-width: 38rem;
+    margin: 1.2rem 0 3rem 0;
+    line-height: 1.8rem;
+
+}
+.btn-container button{
+    border: .1rem solid #5db9ee;
+    font-size: 1.1rem;
+    padding: .7rem 2.5rem;
+    border-radius: .5rem;
+    cursor: pointer;
+    transition: .5s ease;
+}
+button:nth-child(1){
+    background: #5db9ee;
+    color: #262525 ;
+
+}
+button:nth-child(2){
+    background: transparent;
+    color: #5db9ee;
+    margin-left: 2rem;
+}
+button:nth-child(1):hover{
+    background: transparent;
+    color: #5db9ee;
+}
+button:nth-child(2):hover{
+    background: #5db9ee;
+    color: #262525 ;
+}
+.icons .fa-brands{
+    cursor: pointer;
+    background: linear-gradient(#fff, #3877ff)
+    -webkit-background-clip:text;
+    -webkit-text-fill-clip: transparent;
+}
+
+.design .circle{
+    aspect-ratio: 1;
+    position: absolute;
+    border-radius: 50%;
+    top: 50%;
+    left: 70%;
+    transform: translate(-50%, -50%);
+
+
+}
+
+.circle:nth-child(1){
+    background: linear-gradient(90deg, transparent 50%, #262525 50%);
+    width: 34rem;
+
+}
+.circle:nth-child(2){
+    background-image: url("./WhatsApp\ Image\ 2024-06-11\ at\ 10.35.02\ AM.jpeg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 30rem;
+    box-shadow: 
+    0 0 2rem #fff,
+    inset 0 0 1rem #fff;
+}
+
+.navlist li a::after, .navlist .active::after{
+    content: "";
+    position: absolute;
+    background: #fff;
+    width: 100%;
+    height: .1rem;
+    left: 0;
+    bottom: -5px;
+    transform: scaleX(0);
+    transition: transform .5s;
+}
+.navlist li a:hover::after, .navlist .active::after{
+    transform: scaleX(1);
+}
+
+.left-container .skill{
+    display: flex;
+    color: #3877ff;
+    margin: 2rem;
+}
+
+.skill .left-container h2{
+    padding-top: 0;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    width: 100%;
+    text-align: center;
+}
+
+
+
+
+/* skills section animation  */
+#skills{
+    display: flex;
+    flex-direction: column !important;
+    align-items: center;
+    color:white;
+    font-size: 2rem;
+    height: auto !important;
+    justify-content: center;
+}
+
+.skill-container{
+display: flex;
+flex-wrap: wrap;
+justify-content: space-around;
+width:100%;
+margin-top: 2rem;
+
+}
+
+.skill-card{
+    display: flex;
+    flex-direction: column;
+    width:10vw;
+    margin: 1rem;
+    box-shadow: 0 0 10px 4px rgba(255,255,255,.7);
+    border-radius: 2rem;
+    justify-content: center;
+    align-items: center;
+    padding:2rem;
+
+}
+.skill-card:hover{
+    transform:scale(1.02) ;
+}
+.skill-card>div>img{
+    height:5rem;
+    width: 5rem;
+}
+
+
+
+/* porject section */
+#projects{
+    display:flex ;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 30vh;
+    
+}
+#projects>h1{
+        font-size: 3rem;
+         color: #fff;
+}
+
+
+.project-box{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+
+}
+
+.project{
+    display: flex;
+    flex-direction: column; 
+    margin: 1rem;
+    box-shadow: 0 0 10px 4px rgba(255,255,255,.7);
+    border-radius: 2rem;
+    justify-content: center;
+    align-items: center;
+    padding:2rem;
+    height: 20ch;
+}
+.project:nth-child(1){
+    background: url("./hospital1.jpg") center no-repeat;
+    background-image: 100%;
+}
+.project:nth-child(2){
+    background: url("./hotel.avif") center no-repeat;
+    background-image: center, 10vh;
+    
+}
+.project:nth-child(3){
+    background: url("./shoping.jpg") center no-repeat;
+    background-image: center;
+}
+.project:nth-child(4){
+    background: url("./lab.webp") center no-repeat;
+    background-image: center;
+}
+
+.contact{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: auto !important;
+}
+.contact>h1{
+    font-size: 3rem;
+    color:white;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    width:40vw;
+    gap: 1rem;
+}
+
+input,textarea,button{
+padding:.5rem;
+border-radius: 1rem;
+}
+button{
+    background: rgb(146, 235, 146);
+    cursor: pointer;
+}
+
+button:hover{
+    transform: scale(1.02); 
+}
+.resume{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: auto !important;
+
+}
+ .resume .btn-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1.5rem;
+    margin-bottom: 9rem;
+    width: 40rem;
+
+
+ }
+
+ .resume>h1{
+    color: #fff;
+    font-size: 3rem;
+ }
+
+ .resume .btn-container:hover{
+    transform:scale(1.02) ;
+
+
+ }
